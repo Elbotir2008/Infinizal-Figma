@@ -1,0 +1,609 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --main-color1: #57b8ff;
+  --main-color2: #fdd04a;
+  --color-black: #000000e0;
+  --color-text: #ffffff;
+  --color-paragraph: #dfdfdfcc;
+  font-size: 62.5%;
+}
+input {
+  outline: none;
+}
+html {
+  scroll-behavior: smooth;
+  font-family: "Orbitron", sans-serif;
+  overflow-x: hidden;
+}
+li {
+  list-style: none;
+}
+span {
+  display: inline-block;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  max-width: 1240px;
+}
+header {
+  width: 100%;
+  height: 59rem;
+  background: linear-gradient(
+    to right,
+    var(--color-black) 50%,
+    var(--main-color1) 50%
+  );
+}
+nav {
+  height: 6rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+nav .iconNav {
+  position: absolute;
+  margin-left: -74rem;
+  color: var(--color-text);
+  display: flex;
+}
+.iconNav h3 {
+  height: 2.1rem;
+  width: 10.3rem;
+  margin-top: 1rem;
+  margin-left: 0.5rem;
+  font-size: 2.5rem;
+  font-family: sans-serif;
+}
+.iconNav .doc-img {
+  margin-top: 2rem;
+  margin-left: -0.6rem;
+}
+ul {
+  display: flex;
+  gap: 3rem;
+  margin-left: 24.2rem;
+  margin-right: 14rem;
+}
+.likNavs ul li a {
+  font-size: 0rem;
+  font-weight: 400;
+  line-height: 2.6rem;
+  color: var(--color-text);
+}
+.myHref2 {
+  color: var(--main-color2);
+}
+.myHref {
+  color: var(--color-text);
+}
+.btnNavs button a {
+  position: absolute;
+  top: 3%;
+  left: 85%;
+  color: var(--color-text);
+  border: 1px solid var(--color-text);
+  padding: 1rem 2rem;
+  background-color: transparent;
+  font-family: "Orbitron", sans-serif;
+  cursor: pointer;
+  transition: 0.3s linear;
+  color: var(--color-text);
+}
+.btnNavs button a:hover {
+  transition: 0.3s linear;
+  color: var(--main-color2);
+  border: 1px solid var(--main-color2);
+}
+.btnNavs img {
+  visibility: hidden;
+}
+.mainhead {
+  position: relative;
+  color: var(--color-text);
+  margin: 8rem;
+  height: 90rem;
+}
+.mainhead h1 {
+  width: 50%;
+  font-family: Orbitron;
+  font-size: 4.3rem;
+  font-weight: 400;
+  line-height: 6rem;
+  margin-bottom: 2rem;
+}
+.mainhead p {
+  width: 45%;
+  font-family: "Orbitron", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 2rem;
+  margin-bottom: 1rem;
+}
+
+.myButton2 {
+  font-family: "Orbitron", sans-serif;
+  margin-top: 1.5rem;
+  padding: 1rem 2rem;
+  background-color: var(--main-color1);
+  color: var(--color-text);
+  border: none;
+  cursor: pointer;
+}
+.myButton3 {
+  font-family: "Orbitron", sans-serif;
+  margin-top: 1.5rem;
+  padding: 1rem 2rem;
+  background-color: var(--main-color1);
+  color: var(--color-text);
+  border: none;
+  cursor: pointer;
+  background-color: var(--color-black);
+  transition: 0.3s linear;
+}
+.myButton3:hover {
+  transition: 0.3s linear;
+  letter-spacing: 1.5px;
+}
+.mainhead .txthead span {
+  font-family: "Orbitron", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.6rem;
+  color: var(--main-color1);
+}
+.mainhead .txthead .myImg2 {
+  position: absolute;
+  left: 0.3%;
+  top: 0.9%;
+}
+.mainhead .txthead .myImg3 {
+  margin-bottom: -0.5rem;
+}
+.imghead {
+  position: absolute;
+  left: 55%;
+  top: -5%;
+}
+.imghead img {
+  width: 55rem;
+}
+.sponsors {
+  width: 100%;
+  height: 30rem;
+  background-color: var(--main-color2);
+  text-align: center;
+  padding: 5rem;
+}
+.sponsors .txtSponsors h2 {
+  font-family: "Orbitron", sans-serif;
+  font-size: 3.5rem;
+  font-weight: 400;
+  line-height: 5.8rem;
+}
+.sponsors .txtSponsors p {
+  margin-left: 17rem;
+  width: 55%;
+  font-family: "Orbitron", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 2.6rem;
+}
+.sponsors .cardSponsors {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 2.5rem;
+  gap: 1rem;
+}
+.cardSponsors img {
+  width: 12rem;
+}
+.infGame {
+  background-color: #000;
+  background-image: url(/imges/back.svg);
+  width: 100%;
+  height: 68rem;
+}
+.txtInfgame {
+  position: relative;
+  text-align: center;
+  padding: 5rem;
+}
+.txtInfgame h2 {
+  margin: 0 auto;
+  width: 60%;
+  font-family: "Orbitron", sans-serif;
+  font-size: 4rem;
+  font-weight: 400;
+  line-height: 7.4rem;
+  color: var(--color-text);
+}
+.txtInfgame span {
+  font-family: "Orbitron", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 3.2rem;
+  color: var(--main-color1);
+}
+.img4 {
+  position: absolute;
+  left: 44%;
+  top: 15.8%;
+}
+.img5 {
+  margin-bottom: -0.5rem;
+  margin-right: 0.3rem;
+}
+.txtInfgame p {
+  margin: 0 auto;
+  margin-top: 2rem;
+  width: 60%;
+  font-family: "Orbitron", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 3.2rem;
+  color: var(--color-paragraph);
+  letter-spacing: 2px;
+}
+.cardInfgame {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  gap: 3rem;
+  padding-left: 12rem;
+}
+.cardInfgame1 {
+  position: relative;
+  width: 40rem;
+  height: 10rem;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 15px;
+}
+.cardInfgame1 h4 {
+  font-family: "Orbitron", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 4.2rem;
+  color: var(--color-text);
+  margin-left: 5rem;
+  margin-top: 0.5rem;
+}
+.cardInfgame1 p {
+  font-family: "Orbitron", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  color: var(--color-paragraph);
+  margin-left: 5rem;
+}
+.cardInfgame1 img {
+  position: absolute;
+  width: 2rem;
+  margin-top: 1.5rem;
+  margin-left: 2rem;
+}
+.newGame {
+  width: 100%;
+  height: 70rem;
+  background-color: var(--color-black);
+  margin-bottom: -6rem;
+}
+.txtNewgame {
+  position: relative;
+  padding: 6rem;
+}
+.txtNewgame h2 {
+  width: 65%;
+  font-family: "Orbitron", sans-serif;
+  font-size: 4.5rem;
+  font-weight: 400;
+  line-height: 7.4rem;
+  color: var(--color-text);
+}
+.txtNewgame p {
+  width: 65%;
+  font-family: "Orbitron", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 3rem;
+  color: var(--color-paragraph);
+  margin-top: 2rem;
+}
+.txtNewgame button {
+  font-family: "Orbitron", sans-serif;
+  padding: 1rem 2rem;
+  border: none;
+  background-color: var(--main-color1);
+  color: var(--color-text);
+  margin-top: 3rem;
+  cursor: pointer;
+  transition: 0.3s linear;
+}
+.txtNewgame button:hover {
+  letter-spacing: 1.5px;
+  transition: 0.3s linear;
+}
+.txtNewgame span {
+  font-family: "Orbitron", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.6rem;
+  color: var(--main-color1);
+}
+.txtNewgame .img7 {
+  position: absolute;
+  top: 13.5%;
+  left: 5.3%;
+}
+.txtNewgame .img6 {
+  margin-bottom: -0.5rem;
+  margin-right: 0.4rem;
+}
+.imgNewgame {
+  position: relative;
+  margin-left: 79rem;
+  margin-top: -43rem;
+  width: 33rem;
+  height: 38rem;
+}
+.img-play {
+  width: 30rem;
+  height: 40rem;
+}
+.pause {
+  position: absolute;
+  top: 40%;
+  left: 35%;
+  color: var(--color-text);
+  background-color: rgb(181, 180, 179);
+  padding: 2rem;
+  border-radius: 40%;
+  z-index: 10;
+}
+.opacity {
+  position: absolute;
+  top: 36%;
+  left: 30%;
+  width: 11rem;
+  height: 11rem;
+  background-color: var(--color-text);
+  z-index: 9;
+  opacity: 0.3;
+  border-radius: 50%;
+}
+.secImg {
+  width: 100%;
+  height: 50rem;
+  margin-top: 6rem;
+  margin-bottom: -4rem;
+  background-color: var(--color-black);
+}
+.imges {
+  display: flex;
+  width: 400vw;
+}
+.img {
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 33vw;
+  height: 40rem;
+}
+.img img {
+  position: absolute;
+  width: 100vw;
+  height: 104vh;
+}
+.img h5 {
+  color: var(--color-text);
+  z-index: 10;
+  font-family: "Orbitron", sans-serif;
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 5.8rem;
+}
+.articles {
+  width: 100%;
+  height: 70rem;
+  background-color: black;
+  margin-top: 2rem;
+}
+.txtArticles {
+  position: relative;
+  padding: 5rem;
+}
+.txtArticles h2 {
+  font-family: "Orbitron", sans-serif;
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 7.4rem;
+  color: var(--color-text);
+}
+.txtArticles span {
+  color: var(--color-text);
+  font-family: "Orbitron", sans-serif;
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 7.4rem;
+  margin-top: -3rem;
+}
+.txtArticles button {
+  position: absolute;
+  top: 55%;
+  left: 85%;
+  font-family: "Orbitron", sans-serif;
+  padding: 1rem 2rem;
+  border: none;
+  background-color: var(--main-color1);
+  color: var(--color-text);
+  cursor: pointer;
+  transition: 0.3s linear;
+}
+.txtArticles button:hover {
+  letter-spacing: 1.5px;
+  transition: 0.3s linear;
+}
+.txtArticles .mySpan {
+  font-family: "Orbitron", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.6rem;
+  color: var(--main-color1);
+}
+.myimg8 {
+  position: absolute;
+  top: 23.4%;
+  left: 4.4%;
+}
+.myimg9 {
+  margin-bottom: -0.5rem;
+  margin-right: 0.5rem;
+}
+.cardsArticles {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto;
+  column-gap: 3rem;
+}
+.cardArticles1 {
+  padding-top: -10rem;
+  padding-left: 5rem;
+}
+.cardArticles1 img {
+  width: 40rem;
+}
+.cardArticles {
+  margin-bottom: 4rem;
+  margin-left: -4rem;
+  width: 17rem;
+}
+.cardsArticles div h6 {
+  font-family: "Orbitron", sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  margin-top: 5rem;
+  line-height: 3.4rem;
+  color: white;
+}
+.cardsArticles div span {
+  font-family: "Orbitron", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.6rem;
+  color: var(--main-color1);
+}
+.cardsArticles div p {
+  text-transform: capitalize;
+  font-family: "Orbitron", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 2.5rem;
+  color: var(--color-text);
+}
+footer {
+  width: 100%;
+  background-color: var(--main-color2);
+  text-align: center;
+  padding: 7rem;
+}
+footer h1 {
+  margin: 0 auto;
+  width: 60%;
+  font-family: "Orbitron", sans-serif;
+  font-size: 4rem;
+  font-weight: 400;
+  line-height: 8.2rem;
+}
+footer p {
+  margin: 2rem auto;
+  font-family: "Orbitron", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 2rem;
+}
+.myPhar2 {
+  margin-top: 4rem;
+}
+.myPhar {
+  margin-left: 10rem;
+  width: 75%;
+}
+footer input {
+  width: 30rem;
+  padding: 1.5rem;
+}
+footer button {
+  font-family: "Orbitron", sans-serif;
+  padding: 1.5rem 2rem;
+  border: none;
+  background-color: var(--main-color1);
+  color: var(--color-text);
+  margin-top: 3rem;
+  cursor: pointer;
+  margin-left: -1rem;
+  transition: 0.3s linear;
+  /* transform-origin: left; */
+}
+footer button:hover {
+  transition: 0.3s linear;
+  letter-spacing: 1.5px;
+}
+.toogleBtn {
+  position: absolute;
+  top: 3%;
+  left: 72%;
+  padding: 0.5rem 3.5rem;
+  border-radius: 2rem;
+  border: 1px solid var(--color-text);
+  background-color: transparent;
+}
+svg {
+  font-size: 2rem;
+  cursor: pointer;
+}
+.svg1 {
+  display: none;
+}
+.svg2 {
+  fill: var(--main-color2);
+  margin-top: 0.2rem;
+}
+.dark {
+  background-color: black !important;
+  color: var(--color-text);
+}
+#loading {
+  position: fixed;
+  width: 100px;
+  height: 100px;
+  border-top: 2px solid aqua;
+  border-left: 2px solid aqua;
+  border-radius: 50%;
+  top: 40%;
+  left: 45%;
+  z-index: 10000;
+  transition: 0.5s;
+  animation: animate 0.5s linear infinite;
+}
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loading-none {
+  opacity: 0;
+  z-index: -1;
+}
